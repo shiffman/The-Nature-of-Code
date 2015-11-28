@@ -914,8 +914,9 @@ void setup() {
 void draw() {
   background(255);
 
-  //[full] In order to move the wave, we start at a different theta value each frame.  startAngle += 0.02;
-float angle = startAngle;
+  //[full] In order to move the wave, we start at a different theta value each frame.
+  float angle = startAngle;
+  startAngle += 0.02;
   //[end]
 
   for (int x = 0; x &lt;= width; x += 24) {
