@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "start": "magicbook build"
+  },
   "dependencies": {
+    "magicbook": "^0.1.16",
     "magicbook-codesplit": "0.1.2",
     "magicbook-katex": "0.0.4"
   }

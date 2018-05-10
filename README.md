@@ -15,14 +15,14 @@ This repository is in progress.  It's for a new edition of the book that I will 
 * Install [node.js](https://nodejs.org/en/).
 * At a terminal prompt ([more info here](https://github.com/magicbookproject/magicbook/)):
 ```
-npm install magicbook -g
+npm install magicbook
 ```
 * Clone (or download) this very repo.
 * In terminal, navigate to the directory where you cloned this repo.
 * Enter these commands:
 ```
 npm install
-magicbook build
+npm run start
 ```
 * Navigate to "build" directory and look for generated files.
 
