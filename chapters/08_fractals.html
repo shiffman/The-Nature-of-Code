@@ -300,7 +300,7 @@ void cantor(float x, float y, float len) {
 <pre data-code-language="java" data-type="programlisting" class="codesplit">
    line(x, y, x + len / 3, y);</pre>
 
-<p>Instead of calling the <code>line()</code> function directly, we can simply call the <code>cantor()</code> function itself. After all, what does the <code>cantor()</code> function do? It draws a line at an <em>(x,y)</em> position with a given length! And so:</p>
+<p>Instead of calling the <code>line()</code> function directly, we can call the <code>cantor()</code> function itself. After all, what does the <code>cantor()</code> function do? It draws a line at an <em>(x,y)</em> position with a given length! And so:</p>
 
 <pre data-code-language="java" data-type="programlisting" class="codesplit">
    line(x, y, x + len/3, y);           becomes ----&gt; cantor(x, y, len/3);</pre>
@@ -357,7 +357,7 @@ void cantor(float x, float y, float len) {
 
 <a data-primary="ArrayList class (Java)" data-secondary="fractals and" data-type="indexterm"></a> <a data-primary="fractals" data-secondary="Koch curve" data-type="indexterm"></a> <a data-primary="Koch curve" data-type="indexterm"></a> <a data-primary="recursion" data-secondary="ArrayList objects and" data-type="indexterm"></a>
 
-<p>Writing a function that recursively calls itself is one technique for generating a fractal pattern on screen. However, what if you wanted the lines in the above Cantor set to exist as individual objects that could be moved independently? The recursive function is simple and elegant, but it does not allow you to do much besides simply generating the pattern itself. However, there is another way we can apply recursion in combination with an <code>ArrayList</code> that will allow us to not only generate a fractal pattern, but keep track of all its individual parts as objects.</p>
+<p>Writing a function that recursively calls itself is one technique for generating a fractal pattern on screen. However, what if you wanted the lines in the above Cantor set to exist as individual objects that could be moved independently? The recursive function is simple and elegant, but it does not allow you to do much besides generating the pattern itself. However, there is another way we can apply recursion in combination with an <code>ArrayList</code> that will allow us to not only generate a fractal pattern, but keep track of all its individual parts as objects.</p>
 
 <p>To demonstrate this technique, let’s look at another famous fractal pattern, discovered in 1904 by Swedish mathematician Helge von Koch. Here are the rules. (Note that it starts the same way as the Cantor set, with a single line.)</p>
 

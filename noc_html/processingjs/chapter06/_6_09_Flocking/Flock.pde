@@ -3,7 +3,7 @@
 // The Nature of Code, Spring 2011
 
 // Flock class
-// Does very little, simply manages the ArrayList of all the boids
+// Does very little, it just manages the ArrayList of all the boids
 
 class Flock {
   ArrayList<Boid> boids; // An ArrayList for all the boids

@@ -9,7 +9,7 @@
 
 <p>Here we are: the beginning. Well, almost the beginning. If it’s been a while since you’ve done any programming in Processing (or any math, for that matter), this introduction will get your mind back into computational thinking before we approach some of the more difficult and complex material.</p>
 
-<p>In Chapter 1, we’re going to talk about the concept of a vector and how it will serve as the building block for simulating motion throughout this book. But before we take that step, let’s think about what it means for something to simply move around the screen. Let’s begin with one of the best-known and simplest simulations of motion—the random walk.</p>
+<p>In Chapter 1, we’re going to talk about the concept of a vector and how it will serve as the building block for simulating motion throughout this book. But before we take that step, let’s think about what it means for something to only move around the screen. Let’s begin with one of the best-known and simplest simulations of motion—the random walk.</p>
 
 <section data-type="sect1" id="intro_section1">
 <h2>I.1 Random Walks</h2>
@@ -217,7 +217,7 @@ void draw() {
 <figcaption>Figure I.1</figcaption>
 </figure>
 
-<p>To implement a <code>Walker</code> object that can step to any neighboring pixel (or stay put), we could pick a number between 0 and 8 (nine possible choices). However, a more efficient way to write the code would be to simply pick from three possible steps along the x-axis (-1, 0, or 1) and three possible steps along the y-axis.</p>
+<p>To implement a <code>Walker</code> object that can step to any neighboring pixel (or stay put), we could pick a number between 0 and 8 (nine possible choices). However, a more efficient way to write the code would be just to pick from three possible steps along the x-axis (-1, 0, or 1) and three possible steps along the y-axis.</p>
 
 <pre data-code-language="java" data-type="programlisting" class="codesplit">
   void step() {

@@ -199,7 +199,7 @@ float aAcceleration = 0.01;</pre>
 
 <p>However, we can produce a more interesting result by dynamically assigning an angular acceleration according to forces in the environment. Now, we could head far down this road, trying to model the physics of angular acceleration using the concepts of <a href="http://en.wikipedia.org/wiki/Torque">torque</a> and <a href="http://en.wikipedia.org/wiki/Moment_of_inertia">moment of inertia</a>. Nevertheless, this level of simulation is beyond the scope of this book. (We will see more about modeling angular acceleration with a pendulum later in this chapter, as well as look at how Box2D realistically models rotational motion in Chapter 5.)</p>
 
-<p>For now, a quick and dirty solution will do. We can produce reasonable results by simply calculating angular acceleration as a function of the object’s acceleration vector. Here’s one such example:</p>
+<p>For now, a quick and dirty solution will do. We can produce reasonable results by calculating angular acceleration as a function of the object’s acceleration vector. Here’s one such example:</p>
 
 <pre data-code-language="java" data-type="programlisting" class="codesplit">
     aAcceleration = acceleration.x;</pre>
@@ -359,7 +359,7 @@ float aAcceleration = 0.01;</pre>
 
 <a data-primary="atan2() function (Processing)" data-type="indexterm"></a> <a data-primary="Processing" data-secondary="atan2() function" data-type="indexterm"></a> <a data-primary="tangent" data-secondary="atan2() function" data-type="indexterm"></a>
 
-<p>…we get the same angle for each vector. This can’t be right for both; the vectors point in opposite directions! The thing is, this is a pretty common problem in computer graphics. Rather than simply using <code>atan()</code> along with a bunch of conditional statements to account for positive/negative scenarios, Processing (along with pretty much all programming environments) has a nice function called <code>atan2()</code> that does it for you.</p>
+<p>…we get the same angle for each vector. This can’t be right for both; the vectors point in opposite directions! The thing is, this is a pretty common problem in computer graphics. Rather than just using <code>atan()</code> along with a bunch of conditional statements to account for positive/negative scenarios, Processing (along with pretty much all programming environments) has a nice function called <code>atan2()</code> that does it for you.</p>
 
 <figure class="screenshot" data-pde="processingjs/chapter03/_3_03_pointing_velocity/_3_03_pointing_velocity.pde  processingjs/chapter03/_3_03_pointing_velocity/Mover.pde"><img alt="ch03 ex03" src="chapter03/ch03_ex03.png" />
 <figcaption>&nbsp;</figcaption>
